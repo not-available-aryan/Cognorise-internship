@@ -1,0 +1,143 @@
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: darkslategray;
+    font-family:  sans-serif;
+    min-height: 100vh;
+  }
+  
+button {
+    height: fit-content;
+    cursor: pointer;
+    color: #04202c;
+    background-color: #ffff;
+    margin-right: 1vh;
+  }
+  
+  .app {
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+    color: white;
+  }
+  
+  .input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 10px 0px;
+  }
+  
+  .to-do-input input {
+    width: 250px;
+    font-family: inherit;
+    border: none;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .to-do-input button {
+    color: #5b7065;
+    font-family: inherit;
+    border: none;
+    padding: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .to-do-list i {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .to-do-list .fa-pen-to-square {
+    color: black;
+  }
+  
+  .to-do-list button {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-controller {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-controller textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    line-height: 1.4;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
+    padding: 1vh;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 5px white;
+  }
+  
+  .edit-controller {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .update-controller {
+    display: none;
+  }
+  
+  @media(max-width: 768px) {
+    .app {
+      width: 95%;
+    }
+  
+    .input-header {
+      flex-direction: column;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    
+    h1{
+        text-align: center;
+    }
+  
+    .to-do-input {
+      display: flex;
+    }
+  
+    .to-do-input input {
+      width: 300px;
+    }
+  
+  }
